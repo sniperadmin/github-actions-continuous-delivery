@@ -1,0 +1,10 @@
+name: Staging deployment
+
+on: 
+  pull_request:
+    # It is needed to be labeled
+    types: [labeled]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
